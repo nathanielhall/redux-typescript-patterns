@@ -16,3 +16,13 @@ Redux typings and patterns derived from the links below
 
 
 [Improved Redux type safety with TypeScript 2.8 – Martin Hochel – Medium](https://medium.com/@martin_hotell/improved-redux-type-safety-with-typescript-2-8-2c11a8062575)
+
+
+### TO-DO
+Simplify Redux REQUEST, SUCCESS, FAILURE Pattern
+
+https://medium.com/skyshidigital/simplify-redux-request-success-failure-pattern-ce77340eae06
+
+https://blog.logrocket.com/data-fetching-in-redux-apps-a-100-correct-approach-4d26e21750fc
+
+https://medium.freecodecamp.org/the-best-way-to-architect-your-redux-app-ad9bd16c8e2d
