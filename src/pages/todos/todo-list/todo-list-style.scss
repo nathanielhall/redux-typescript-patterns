@@ -1,0 +1,22 @@
+
+  div.listContainer {
+    padding-left: 0;
+    width: 31.5em;
+    overflow:auto;
+    height:28.5em;
+  }
+
+ .list li {
+    color: #333;
+    padding: 7px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  ul.list {
+    padding: 0;
+    list-style: none;
+    padding-left: 0;
+    white-space: nowrap;
+  }
