@@ -20,11 +20,10 @@ import { connect } from 'react-redux'
 import * as fromActions from '../redux/actions'
 import { getTodos } from '../redux/selectors'
 import TodoList from '../todo-list'
-import { ITodo } from '../model'
 
 
-type TodoListContainerProps = {
-  items: ReadonlyArray<ITodo>,
+// TIP: This approach will ensure mapStateToProps type definitions stay in sync!
+type TodoListContainerProps = ReturnType<typeof mapStateToProps> & {
   onDelete: (id: number) => void,
   fetchTodoItems: () => void
 }
