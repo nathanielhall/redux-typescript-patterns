@@ -1,13 +1,12 @@
 /**
  * @module Todos
  */ /** */
-import { TodoState, initialState } from '../model'
+import { ITodoState, initialState } from '../model'
 import * as fromActions from './actions'
-import { Reducer } from 'redux'
+import { Reducer } from "redux"
 
 
-
-const reducer: Reducer<TodoState, fromActions.Actions> = (
+const reducer: Reducer<ITodoState, fromActions.Actions> = (
   state = initialState,
   action
 ) => {

@@ -14,14 +14,11 @@ export interface ITodo {
  * Todo State in Redux 
  * Items are Readonly to keep safe from mutation operations
  */
-export interface TodoState {    
+export interface ITodoState {    
     items: ReadonlyArray<ITodo>   
 }
 
-export const initialState: TodoState = {
+export const initialState: ITodoState = {
     items: []
 }
-
-
-
 

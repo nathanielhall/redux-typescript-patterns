@@ -41,9 +41,6 @@ export const fetchTodoItems: Middleware = ({ dispatch }: MiddlewareAPI) =>
         }
 
         case fromTodosActions.FETCH_ITEMS_ONSUCCESS: {
-
-          debugger;
-
           if (action.payload && action.payload.length > 0) {
             dispatch(fromTodosActions.Actions.setTodoItems(action.payload))
           }
@@ -61,8 +58,6 @@ export const fetchTodoItems: Middleware = ({ dispatch }: MiddlewareAPI) =>
           break
         }
         case fromTodosActions.FETCH_ITEMS_ONERROR: {
-
-          debugger;
 
           dispatch(fromUIactions.Actions.hideSpinner())
 
