@@ -1,6 +1,6 @@
-import { applyMiddleware } from 'redux'
+import {applyMiddleware} from "redux";
+import {todosMdl} from "../../pages/todos";
+import {apiMdl} from "./api";
+import {notificationMdl} from "../../common/notification";
 
-
-export default applyMiddleware(
-  // TODO - add middlewares
-)
+export default applyMiddleware(...todosMdl, ...notificationMdl, ...apiMdl);
