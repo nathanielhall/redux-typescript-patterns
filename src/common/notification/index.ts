@@ -1,15 +1,17 @@
-export const MODULE = "Notifications";
-
 import NotificationList from "./notification-list";
 import reducer from "./redux/reducer";
 import * as fromActions from "./redux/actions";
+import {NotificationType} from "./model";
 
-export {NotificationList as default, reducer, fromActions};
+const MODULE = "Notifications";
+const NotificationsState = {[MODULE]: reducer};
 
-// todo: fix manual export - how? Eject CRA?
-import {INotification, NotificationState} from "./model";
-export type INotification = INotification;
-export type NotificationState = NotificationState;
+export {
+  NotificationList as default,
+  fromActions,
+  NotificationsState,
+  NotificationType,
+  MODULE
+};
 
-export {NotificationType} from "./model";
 export {notificationMdl} from "./redux/middleware";

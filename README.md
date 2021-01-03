@@ -1,4 +1,4 @@
-# Redux Example
+# Redux TypeScript Patterns
 
 Redux typings and patterns derived from the links below
 
